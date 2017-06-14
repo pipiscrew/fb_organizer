@@ -4,6 +4,7 @@
 </div>
 
 <script>
+		//new record
 		$('#btn_x_new').on('click', function(e) {
 			$("#loading").height($('body').height());
 			$("#loading").show();
@@ -12,7 +13,25 @@
 				$("#loading").hide();
 				$("#x").hide(); //the grid div
 				
-				$("#x_details").show(); //the table add new elements
+				$("#x_details").show(); //the table - add new elements
+			});
+		});
+	
+		//edit record
+		$('#btn_xs_edit').on('click', function(e) {
+			var rowData = getSelected('records_xs_TBL');
+			if (rowData == null) {
+				alert("Please choose record!");
+				return;
+			}
+
+			$("#loading").height($('body').height());
+			$("#loading").show();
+
+			$("#xs_details").load('x_details.php?id=' + rowData[0], function() {
+				$("#loading").hide();
+				$("#x").hide(); //the grid div
+				$("#x_details").show();//the table - edit elements
 			});
 		});
 </script>

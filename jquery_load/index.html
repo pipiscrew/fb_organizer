@@ -1,4 +1,5 @@
 <button id="btn_x_new" type="button" class="btn btn-primary">	New</button>
+<button id="btn_x_edit" type="button" class="btn btn-primary">	Edit</button>
 
 <div id="x_details">
 </div>
@@ -18,7 +19,7 @@
 		});
 	
 		//edit record
-		$('#btn_xs_edit').on('click', function(e) {
+		$('#btn_x_edit').on('click', function(e) {
 			var rowData = getSelected('records_xs_TBL');
 			if (rowData == null) {
 				alert("Please choose record!");

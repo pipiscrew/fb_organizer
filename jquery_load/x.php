@@ -1,8 +1,6 @@
 <button id="btn_x_new" type="button" class="btn btn-primary">	New</button>
 <button id="btn_x_edit" type="button" class="btn btn-primary">	Edit</button>
 
-<div id="x_details">
-</div>
 
 //check more for effects - https://www.w3schools.com/jquery/jquery_fade.asp
 
